@@ -6,7 +6,8 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="" method="post">
+    <h1>Login</h1>
+    <form action="./actions/login.php" method="post">
         <div>
             <label for="user">User</label>
             <input type="email" name="user">
