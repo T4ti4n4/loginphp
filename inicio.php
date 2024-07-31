@@ -1,3 +1,19 @@
+<?php
+if (session_status()== PHP_SESSION_ACTIVE){
+    session_start();
+
+    if(!isset($_SESSION["user"])){
+        header("Location: http://localhost/loginphp");
+    }
+}
+$user_name= $_SESSION["user"]["name"];
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +23,7 @@
     <title>Página de Inicio</title>
 </head>
 <body>
-    <h1>Bienvenido: Usuario admin</h1>
+    <h1>Bienvenido usuario: <?php echo $user_name;?>Menu 📖 </h1>
+    <a href="http://localhost/loginphp/actions/logout.php">Cerrar Sesión</a>
 </body>
 </html>
