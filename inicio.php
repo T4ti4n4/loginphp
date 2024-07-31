@@ -23,7 +23,7 @@ $user_name= $_SESSION["user"]["name"];
     <title>Página de Inicio</title>
 </head>
 <body>
-    <h1>Bienvenido usuario: <?php echo $user_name;?>Menu 📖 </h1>
+    <h1>Bienvenido usuario: <?php echo $user_name;?> 👍 </h1>
     <a href="http://localhost/loginphp/actions/logout.php">Cerrar Sesión</a>
 </body>
 </html>
